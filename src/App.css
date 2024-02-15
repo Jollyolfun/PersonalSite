@@ -1,5 +1,10 @@
-.App {
+.root {
   text-align: center;
+  display: grid;
+}
+body {
+  background-color: #273c50;
+
 }
 
 .App-logo {
@@ -36,3 +41,197 @@
     transform: rotate(360deg);
   }
 }
+
+
+.myNameIs {
+  padding: 30px;
+  font-size: 80px;
+  font-family: "Andale Mono", monospace;
+  letter-spacing: -10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/*
+the hello text box
+*/
+
+.hello {
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  font-family: "Andale Mono", monospace;
+  color: #dbab7d;
+  font-weight: 500;
+  border: solid;
+  margin: 0 auto; 
+  border-color: #dbab7d;
+}
+.optionsMenu {
+  font-size: 20px;
+  padding: 10px;
+  width: 500px;
+  font-family: "Andale Mono", monospace;
+  color: #dbab7d;
+  font-weight: 500;
+  border: solid;
+  margin: 0 auto; 
+  border-color: #dbab7d;
+  margin-bottom: 30px;
+}
+/* a div at the very top that can potentially 
+contain some other information about me or links*/
+
+.top {
+  height: 100px
+}
+
+
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Each column takes up 1 fraction of the available space */
+  grid-template-rows: repeat(2, auto); /* Rows adjust their height based on content */
+  gap: 50px; /* Adjust gap as needed */
+  padding: 30px;
+  margin: 0 auto; /* Centers the grid container horizontally */
+  width: auto; /* Adjust width or use percentage to ensure it fits its parent container */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.option {
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: "Andale Mono", monospace;
+
+  /* Removed fixed width to allow grid to control the size */
+}
+.option:hover {
+  background-color: #5d807f; /* Highlight color on hover */
+  color: #fff; /* Text color changes to white */
+}
+
+.line-with-dots {
+  position: relative;
+  width: 600px; /* Adjust based on your requirement */
+  height: 2px; /* Thickness of the line */
+  background-color: #fff; /* Color of the line */
+  margin: 0 auto; /* Spacing around the line */
+}
+
+.line-with-dots::before,
+.line-with-dots::after {
+  content: '';
+  position: absolute;
+  top: -4px; /* Adjust to center the dot vertically on the line */
+  width: 10px; /* Diameter of the dot */
+  height: 10px; /* Diameter of the dot */
+  background-color: #fff; /* Color of the dot */
+  border-radius: 50%; /* Makes the element circular */
+}
+
+.line-with-dots::before {
+  left: -5px; /* Adjust to position the dot at the start of the line */
+}
+
+.line-with-dots::after {
+  right: -5px; /* Adjust to position the dot at the end of the line */
+}
+
+.gap {
+  height: 200px;
+}
+.gapSmall {
+  height: 50px;
+}
+/* Add to your CSS file */
+.aboutMeContainer {
+  display: flex;
+  align-items: left; /* Adjust alignment as needed */
+  justify-content: flex-start; /* Adjust positioning as needed */
+}
+.aboutMeContainer2 {
+  display: flex;
+  align-items: left; /* Adjust alignment as needed */
+  justify-content: flex-start; /* Adjust positioning as needed */
+}
+
+.topicHeader {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #dbab7d;
+
+}
+
+
+
+/* Example if using a div for the image */
+.myImage {
+  width: 400px; 
+  height: 400px; 
+  background-image: url('https://i.ebayimg.com/images/g/B~gAAOSwhNthhdjn/s-l1600.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-left: 50px;
+  border-radius: 50000px;
+  border: solid;
+  border-color: #80ceef;
+  border-width: 5px;
+  box-shadow: 0 0 10 rgba(167, 132, 132, 10);
+}
+.description {
+  color: #fff;
+  margin-left: 20px;
+  width: 800px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.descriptionContainer2 {
+  display: flex; /* Enables Flexbox */
+  align-items: flex-start; /* Aligns items at the start of the container vertically */
+  justify-content: space-between; /* Puts maximum space between the text and image */
+  width: 1400px;
+  flex-direction: row;
+}
+
+.description2 {
+  color: #fff;
+  margin-left: 50px;
+  /* margin-right: 200px; */
+  width: 600px;
+  text-align: left;
+  font-size: 25px;
+
+}
+
+.myImage2 {
+  height: 400px;
+  width: 800px; 
+  background-image: url('./images/collage.jpg');
+  background-size: cover;
+  /* margin-left: 100px; */
+  border-radius: 5px;
+  border: solid;
+  border-color: #80ceef;
+  border-width: 5px;
+  box-shadow: 0 0 10 rgba(167, 132, 132, 10);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dottedLine {
+  border-top: 2px dotted #80ceef; /* Creates a dotted line at the top of the div */
+  width: 100%; /* Adjust the width as needed */
+  margin: 20px 0; /* Optional: adds some vertical space around the line */
+}
+
+
+
+
