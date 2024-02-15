@@ -118,136 +118,15 @@ function MySite() {
       
       <div className="gap"></div>
 
+      <div className="socialMediaContainer">
+
+        Hello
+
+      </div>
+
     </div>
 
   );
 }
 
 export default MySite;
-
-// import React, { useState, useEffect, useRef } from 'react';
-
-// import './App.css';
-
-// function MySite() {
-//   const [scrollPosition, setScrollPosition] = useState(0);
-//   const aboutMeRef = useRef(null); 
-
-//   const handleScroll = () => {
-//     const position = window.pageYOffset;
-//     setScrollPosition(position);
-//   };
-
-//   useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   const clickedOption = (type) => {
-//     console.log(type);
-//     if (type == 'About Me' && aboutMeRef.current) {
-//       aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to the aboutMeContainer
-//     }
-//   }
-
-//   return (
-//     <div className="root"> 
-//       <div className="top">
-//         {/* Top content */}
-//       </div>
-//       <div className="introduction">
-//         <div className="hello"
-//         style={{
-//           opacity: 1 - scrollPosition / 200,
-//           transition: 'opacity 0.5s ease-out',
-//         }}
-//         >
-//           Hello! I'm
-//         </div>
-//         <div 
-//           className="myNameIs"
-//           style={{ 
-//             opacity: 1 - scrollPosition / 200,
-//             transition: 'opacity 0.5s ease-out',
-//           }}
-//         > 
-//           Cole Perry
-//         </div>
-//       </div>
-//       <div className="optionsMenu"
-//       style={{
-//         opacity: 1- scrollPosition / 200,
-//         transition: 'opacity 0.5s ease-out',
-
-//       }}>
-//           What would you like to see?
-//       </div>
-//       <div className="line-with-dots"></div>
-//       <div className="optionsContainer">
-//         <div className="option" onClick={() => clickedOption('About Me')}> Who I Am</div>
-//         <div className="option" onClick={() => clickedOption('Social Media')}> My Social Media</div>
-//         <div className="option" onClick={() => clickedOption('Projects')}> Self Directed Projects</div>
-//         <div className="option" onClick={() => clickedOption('Skills/Servies')}> Skills/Services</div>
-//         <div className="option" onClick={() => clickedOption('Resume')}> Resumes</div>
-//         <div className="option" onClick={() => clickedOption('Contact Me')}> How To Contact Me</div>
-//       </div>
-//       <div className="line-with-dots"></div>
-//       <div className="gap"></div>
-      
-
-//       <div className="aboutMeContainer" ref={aboutMeRef}> 
-//         <div className="myImage"></div>
-//         <div className="descriptionContainer">
-
-//           <div className="topicHeader"> Who am I? </div>  
-//           <div className="description"> 
-//             <p>Hello there! I'm Cole Perry, a driven problem solver who just happens to be
-//             interested in software and computers studying at the University of Arizona.</p>
-          
-//             <p>I've known I was interested in computers as soon as I downloaded my first Minecraft mod in elementary school.
-//               Back then, I thought nothing was cooler than being able to take a game that I loved, and change it in any
-//               way that I wanted to, and it helped when my brothers would look at the changes I made and say 
-//               "Wait, how did you do that?!". Eventually, that love of changing something evolved into a love of <i>creating</i> things, 
-//               specifically software and websites.
-//             </p>
-          
-//           </div>
-
-//         </div>
-
-//       </div>
-      
-//       <div className="aboutMeContainer2"> 
-//         <div className="descriptionContainer2">
-
-//           <div className="description2"> 
-//             <p>Hello there! I'm Cole Perry, a driven problem solver who just happens to be
-//             interested in software and computers studying at the University of Arizona.</p>
-          
-//             <p>I've known I was interested in computers as soon as I downloaded my first Minecraft mod in elementary school.
-//               Back then, I thought nothing was cooler than being able to take a game that I loved, and change it in any
-//               way that I wanted to, and it helped when my brothers would look at the changes I made and say 
-//               "Wait, how did you do that?!". Eventually, that love of changing something evolved into a love of <i>creating</i> things, 
-//               specifically software and websites.
-//             </p>
-          
-//           </div>
-//           <div className="myImage2"></div>
-
-
-//         </div>
-
-//       </div>
-      
-//       <div className="gap"></div>
-
-//     </div>
-
-//   );
-// }
-
-// export default MySite;
-

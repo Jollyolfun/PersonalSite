@@ -79,9 +79,9 @@ the hello text box
   border-color: #dbab7d;
   margin-bottom: 30px;
 }
+
 /* a div at the very top that can potentially 
 contain some other information about me or links*/
-
 .top {
   height: 100px
 }
@@ -90,12 +90,12 @@ contain some other information about me or links*/
 
 .optionsContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Each column takes up 1 fraction of the available space */
-  grid-template-rows: repeat(2, auto); /* Rows adjust their height based on content */
-  gap: 50px; /* Adjust gap as needed */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 50px;
   padding: 30px;
-  margin: 0 auto; /* Centers the grid container horizontally */
-  width: auto; /* Adjust width or use percentage to ensure it fits its parent container */
+  margin: 0 auto;
+  width: auto; 
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -110,38 +110,37 @@ contain some other information about me or links*/
   transition: background-color 0.5s ease, color 0.5s ease;
   font-family: "Andale Mono", monospace;
 
-  /* Removed fixed width to allow grid to control the size */
 }
 .option:hover {
-  background-color: #5d807f; /* Highlight color on hover */
-  color: #fff; /* Text color changes to white */
+  background-color: #5d807f; 
+  color: #fff; 
 }
 
 .line-with-dots {
   position: relative;
-  width: 600px; /* Adjust based on your requirement */
-  height: 2px; /* Thickness of the line */
-  background-color: #fff; /* Color of the line */
-  margin: 0 auto; /* Spacing around the line */
+  width: 600px;
+  height: 2px; 
+  background-color: #fff;
+  margin: 0 auto;
 }
 
 .line-with-dots::before,
 .line-with-dots::after {
   content: '';
   position: absolute;
-  top: -4px; /* Adjust to center the dot vertically on the line */
-  width: 10px; /* Diameter of the dot */
-  height: 10px; /* Diameter of the dot */
-  background-color: #fff; /* Color of the dot */
-  border-radius: 50%; /* Makes the element circular */
+  top: -4px;
+  width: 10px; 
+  height: 10px; 
+  background-color: #fff; 
+  border-radius: 50%; 
 }
 
 .line-with-dots::before {
-  left: -5px; /* Adjust to position the dot at the start of the line */
+  left: -5px; 
 }
 
 .line-with-dots::after {
-  right: -5px; /* Adjust to position the dot at the end of the line */
+  right: -5px;
 }
 
 .gap {
@@ -150,16 +149,16 @@ contain some other information about me or links*/
 .gapSmall {
   height: 50px;
 }
-/* Add to your CSS file */
+
 .aboutMeContainer {
   display: flex;
-  align-items: left; /* Adjust alignment as needed */
-  justify-content: flex-start; /* Adjust positioning as needed */
+  align-items: left;
+  justify-content: flex-start; 
 }
 .aboutMeContainer2 {
   display: flex;
-  align-items: left; /* Adjust alignment as needed */
-  justify-content: flex-start; /* Adjust positioning as needed */
+  align-items: left; 
+  justify-content: flex-start;
 }
 
 .topicHeader {
@@ -171,7 +170,6 @@ contain some other information about me or links*/
 
 
 
-/* Example if using a div for the image */
 .myImage {
   width: 400px; 
   height: 400px; 
@@ -194,9 +192,9 @@ contain some other information about me or links*/
 }
 
 .descriptionContainer2 {
-  display: flex; /* Enables Flexbox */
-  align-items: flex-start; /* Aligns items at the start of the container vertically */
-  justify-content: space-between; /* Puts maximum space between the text and image */
+  display: flex; 
+  align-items: flex-start;
+  justify-content: space-between; 
   width: 1400px;
   flex-direction: row;
 }
@@ -227,9 +225,16 @@ contain some other information about me or links*/
 }
 
 .dottedLine {
-  border-top: 2px dotted #80ceef; /* Creates a dotted line at the top of the div */
-  width: 100%; /* Adjust the width as needed */
-  margin: 20px 0; /* Optional: adds some vertical space around the line */
+  border-top: 2px dotted #80ceef;
+  width: 100%; 
+  margin: 20px 0; 
+}
+
+.socialMediaContainer {
+  height: 500px;
+
+  border: solid;
+
 }
 
 
