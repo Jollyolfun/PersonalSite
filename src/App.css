@@ -100,6 +100,67 @@ contain some other information about me or links*/
   margin-bottom: 10px;
 }
 
+.socialMediaSelection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto); 
+  gap: 50px;
+  padding: 30px;
+  place-items: center; 
+  margin: 0 auto;
+  width: fit-content; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.socialMediaOption {
+  width: 100px;
+  height: 100px;
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: "Andale Mono", monospace;
+}
+.socialMediaOption:hover {
+  background-color: #5d807f; 
+  color: #fff; 
+}
+
+.socialMediaOption img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image's aspect ratio is maintained */
+}
+
+.socialMediaOptionGithub {
+  width: 100px;
+  height: 100px;
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: "Andale Mono", monospace;
+}
+.socialMediaOptionGithub:hover {
+  background-color: #5d807f; 
+  color: #fff; 
+}
+
+.socialMediaOptionGithub img {
+  margin-top: 15px;
+  width: 70%;
+  height: 70%;
+  object-fit: contain; /* Ensures the image's aspect ratio is maintained */
+}
+
 .option {
   background-color: #80cdef;
   border: 1px solid #0000;
@@ -145,6 +206,8 @@ contain some other information about me or links*/
 
 .gap {
   height: 200px;
+  display: flex;
+  align-items: center;
 }
 .gapSmall {
   height: 50px;
@@ -165,6 +228,8 @@ contain some other information about me or links*/
   font-size: 50px;
   margin-bottom: 20px;
   color: #dbab7d;
+  font-family: "Andale Mono", monospace;
+
 
 }
 
@@ -183,6 +248,7 @@ contain some other information about me or links*/
   border-width: 5px;
   box-shadow: 0 0 10 rgba(167, 132, 132, 10);
 }
+
 .description {
   color: #fff;
   margin-left: 20px;
@@ -231,9 +297,8 @@ contain some other information about me or links*/
 }
 
 .socialMediaContainer {
-  height: 500px;
+  height: 300px;
 
-  border: solid;
 
 }
 
