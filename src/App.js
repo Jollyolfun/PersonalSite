@@ -26,21 +26,21 @@ function MySite() {
   //Determines which button was clicked and where to scroll based on that
   const clickedOption = (type) => {
     console.log(type);
-    if (type == 'About Me' && aboutMeRef.current) {
+    if (type === 'About Me' && aboutMeRef.current) {
       aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); 
     }
-    if (type == 'Social Media' && socialMediaRef.current) {
+    if (type === 'Social Media' && socialMediaRef.current) {
       socialMediaRef.current.scrollIntoView({behavior: 'smooth'})
     }
   }
 
   //Used to open a specific webpage when one of the social media icons are clicked
   const openWebpage = (website) => {
-    if (website == 'linkedin') {
+    if (website === 'linkedin') {
       window.open('https://www.linkedin.com/in/cole-perry-1712aa180/', '_blank', 'noopener,noreferrer');
     }
 
-    if (website == 'github') {
+    if (website === 'github') {
       window.open('https://github.com/Jollyolfun', '_blank', 'noopener,noreferrer');
     }
 
@@ -124,6 +124,9 @@ function MySite() {
             <p>When I'm not programming or 12 hours deep in a sleepless homework session, I'm typically
               reading some Brandon Sanderson novel, playing games, running, or making food to try and 
               impress my girlfriend. 
+            </p>
+            <p> I have to put emphasis on the programming and homework sessions though. That aspect 
+              currently makes up 90% of my life!
             </p>
           
 
