@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import linkedInLogo from './images/lill.png';
 import githubLogo from './images/githublogo.png';
+import resume from './images/Cole_Resume.pdf';
 import './App.css';
 
 function MySite() {
@@ -31,6 +32,12 @@ function MySite() {
     }
     if (type === 'Social Media' && socialMediaRef.current) {
       socialMediaRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+    // if (type === 'Resume') {
+    //   window.open('http://localhost:3000/cole-perry/src/images/Cole_Resume.pdf', '_blank', 'noopener,noreferrer');
+    // }
+    if (type === 'Projects') {
+      window.open('https://github.com/Jollyolfun?tab=repositories', '_blank', 'noopener,noreferrer')
     }
   }
 
@@ -72,7 +79,7 @@ function MySite() {
       </div>
       <div className="optionsMenu"
       style={{
-        opacity: 1- scrollPosition / 200,
+        opacity: 1 - scrollPosition / 200,
         transition: 'opacity 0.5s ease-out',
 
       }}>
@@ -162,6 +169,7 @@ function MySite() {
           </div>
 
         </div>
+        
 
 
       </div>
@@ -170,6 +178,9 @@ function MySite() {
       <div className="gap">
         <div className="line-with-dots"></div>
       </div>
+      <div className="gap"></div>
+      <div className="topicHeader"> Skills and Services </div>  
+      
 
     </div>
 
