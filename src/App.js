@@ -24,20 +24,36 @@ function MySite() {
     };
   }, []);
   
-  //Determines which button was clicked and where to scroll based on that
+
   const clickedOption = (type) => {
     console.log(type);
-    if (type === 'About Me' && aboutMeRef.current) {
-      aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); 
+    let elementRef;
+    
+    if (type === 'About Me') {
+      elementRef = aboutMeRef;
+    } 
+    else if (type === 'Social Media') {
+      elementRef = socialMediaRef;
     }
-    if (type === 'Social Media' && socialMediaRef.current) {
-      socialMediaRef.current.scrollIntoView({behavior: 'smooth'})
+    else if (type === 'Resume') {
+      window.open(resume, '_blank', 'noopener,noreferrer');
+      return;
     }
-    // if (type === 'Resume') {
-    //   window.open('http://localhost:3000/cole-perry/src/images/Cole_Resume.pdf', '_blank', 'noopener,noreferrer');
-    // }
-    if (type === 'Projects') {
-      window.open('https://github.com/Jollyolfun?tab=repositories', '_blank', 'noopener,noreferrer')
+    else if (type === 'Projects') {
+      window.open('https://github.com/Jollyolfun?tab=repositories', '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+  
+    if (elementRef && elementRef.current) {
+      const elementRect = elementRef.current.getBoundingClientRect();
+      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const middlePoint = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+      
+      window.scrollTo({
+        top: middlePoint,
+        behavior: 'smooth'
+      });
     }
   }
 
@@ -147,7 +163,7 @@ function MySite() {
       </div>
       {/* THIS IS THE END OF THE ABOUT ME SECTION */}
 
-
+      <div className="gapSmall"></div>
       <div className="gap">
         <div className="line-with-dots"></div>
       </div>
