@@ -321,21 +321,6 @@ contain some other information about me or links*/
   font-size: 30px;
   margin-bottom: 20px;
   height: 35px;
-  width: 200px;
-  border-radius: 15px;
-  color: #ffff;
-  font-family: "Andale Mono", monospace;
-  background-color: #80cdef;
-  border: 1px solid #0000;
-  text-align: center;
-  line-height: 35px;
-  letter-spacing: -1px;
-
-}
-.subHeader2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  height: 35px;
   width: 250px;
   border-radius: 15px;
   color: #ffff;
@@ -343,8 +328,19 @@ contain some other information about me or links*/
   background-color: #80cdef;
   border: 1px solid #0000;
   text-align: center;
-  line-height: 35px;
-  letter-spacing: -1px;
+
+}
+.subHeader2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 275px;
+  border-radius: 15px;
+  color: #ffff;
+  font-family: "Andale Mono", monospace;
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  text-align: center;
 
 }
 

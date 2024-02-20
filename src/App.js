@@ -198,9 +198,9 @@ function MySite() {
       <div className="gap">
         <div className="line-with-dots"></div>
       </div>
-      <div className="gap"></div>
-      <div className="topicHeader"> Skills and Services </div>  
-      <div className="skillsContainer" ref={skillsRef}>
+      <div className="gap" ></div>
+      <div className="topicHeader" > Skills and Services </div>  
+      <div className="skillsContainer"ref={skillsRef}>
         <div className="skill">
           <div className="subHeader"> What I Know </div>
           <p className="skillItem"> 
@@ -234,6 +234,7 @@ function MySite() {
           
         </div>
       </div>
+      <div className="gap"></div>
       
 
     </div>
