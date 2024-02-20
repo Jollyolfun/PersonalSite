@@ -299,10 +299,66 @@ contain some other information about me or links*/
 
 .socialMediaContainer {
   height: 300px;
+}
 
+.skillsContainer {
+  height: 700px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
 
+.skill {
+  height: 600px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 
+.subHeader {
+  font-size: 30px;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 200px;
+  border-radius: 15px;
+  color: #ffff;
+  font-family: "Andale Mono", monospace;
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: -1px;
+
+}
+.subHeader2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 250px;
+  border-radius: 15px;
+  color: #ffff;
+  font-family: "Andale Mono", monospace;
+  background-color: #80cdef;
+  border: 1px solid #0000;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: -1px;
+
+}
+
+.skillItem {
+  color: #ffff;
+  font-size: 20px;
+
+}
+
+.skillItem2 {
+  color: #ffff;
+  font-size: 20px;
+  padding: 40px;
+
+}
 
 

@@ -8,6 +8,7 @@ function MySite() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const aboutMeRef = useRef(null); 
   const socialMediaRef = useRef(null); 
+  const skillsRef = useRef(null); 
 
   //Used to decide where to scroll to when a specific option
   //on the top of the webpage is clicked
@@ -34,6 +35,9 @@ function MySite() {
     } 
     else if (type === 'Social Media') {
       elementRef = socialMediaRef;
+    }
+    else if (type === 'Skills') {
+      elementRef = skillsRef;
     }
     else if (type === 'Resume') {
       window.open(resume, '_blank', 'noopener,noreferrer');
@@ -106,7 +110,7 @@ function MySite() {
         <div className="option" onClick={() => clickedOption('About Me')}> Who I Am</div>
         <div className="option" onClick={() => clickedOption('Social Media')}> My Social Media</div>
         <div className="option" onClick={() => clickedOption('Projects')}> Self Directed Projects</div>
-        <div className="option" onClick={() => clickedOption('Skills/Servies')}> Skills/Services</div>
+        <div className="option" onClick={() => clickedOption('Skills')}> Skills/Services</div>
         <div className="option" onClick={() => clickedOption('Resume')}> Resumes</div>
         <div className="option" onClick={() => clickedOption('Contact Me')}> How To Contact Me</div>
       </div>
@@ -196,6 +200,40 @@ function MySite() {
       </div>
       <div className="gap"></div>
       <div className="topicHeader"> Skills and Services </div>  
+      <div className="skillsContainer" ref={skillsRef}>
+        <div className="skill">
+          <div className="subHeader"> What I Know </div>
+          <p className="skillItem"> 
+            Extensive knowledge in Object-Oriented Design principles and experience writing thousands
+            of lines of low-coupling high cohesion code.
+          </p>
+          <p className="skillItem"> 
+            Experience designing and implementing relational databases, including querying using SQL
+            integrated into modern programming languages libraries such as Java's JDBC or Python's JayDeBeAPI.
+          </p>
+          <p className="skillItem">
+            Practice in modern web frameworks such as the MERN stack, having implemented self-directed
+            projects involving all aspects of the stack. 
+          </p>
+          <p className="skillItem">
+            Familiarity working with RESTful APIs.
+          </p>
+        </div>
+        <div className="skill">
+          <div className="subHeader2"> What you get</div>
+          <p className="skillItem2">
+            An incredibly driven worker who is eager to learn.
+          </p>
+          <p className="skillItem2">
+            A programmer who efficiently problem solves.
+          </p>
+          <p className="skillItem2">
+            An eager learner who knows when to ask for help.
+          </p>
+
+          
+        </div>
+      </div>
       
 
     </div>
