@@ -2,20 +2,30 @@ import React, { useState, useEffect, useRef } from 'react';
 import linkedInLogo from './images/lill.png';
 import githubLogo from './images/githublogo.png';
 import resume from './images/Cole_Resume.pdf';
+import home from './images/homeLogo.png';
 import './App.css';
 
 function MySite() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const mainMenu = useRef(null);
   const aboutMeRef = useRef(null); 
   const socialMediaRef = useRef(null); 
   const skillsRef = useRef(null); 
+  const [showBar, setShowBar] = useState(false);
+
 
   //Used to decide where to scroll to when a specific option
   //on the top of the webpage is clicked
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
+    if (position > 200) {
+      setShowBar(true);
+    } else {
+      setShowBar(false);
+    }
   };
+  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -38,6 +48,9 @@ function MySite() {
     }
     else if (type === 'Skills') {
       elementRef = skillsRef;
+    }
+    else if (type === 'MainMenu') {
+      elementRef = mainMenu;
     }
     else if (type === 'Resume') {
       window.open(resume, '_blank', 'noopener,noreferrer');
@@ -105,7 +118,7 @@ function MySite() {
       }}>
           What would you like to see?
       </div>
-      <div className="line-with-dots"></div>
+      <div className="line-with-dots" ref={mainMenu}></div>
       <div className="optionsContainer">
         <div className="option" onClick={() => clickedOption('About Me')}> Who I Am</div>
         <div className="option" onClick={() => clickedOption('Social Media')}> My Social Media</div>
@@ -117,6 +130,15 @@ function MySite() {
       <div className="line-with-dots"></div>
       <div className="gap"></div>
       
+      <div className={`fixedTopBar ${showBar ? 'show' : ''}`}>
+        <div className="homeLogo" onClick={() => clickedOption('MainMenu')}>
+          <img src={home} alt="Home" className="homeImage"/>
+        </div>
+        
+      
+      
+      </div>
+
       {/* THIS IS THE ABOUT ME SECTION */}
       <div className="aboutMeContainer" ref={aboutMeRef}> 
         <div className="myImage"></div>

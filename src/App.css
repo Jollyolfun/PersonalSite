@@ -357,4 +357,38 @@ contain some other information about me or links*/
 
 }
 
+.fixedTopBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #5d807f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  transform: translateY(-100%); /* Initially hide the bar */
+  transition: transform 0.5s ease; /* Animate the transform property */
+}
+
+.fixedTopBar.show {
+  transform: translateY(0); /* Move the bar into view */
+}
+
+.hiddenBar {
+  display: none;
+}
+
+.homeLogo {
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.homeImage {
+  width: 100%;
+  height: 100%;
+}
 
